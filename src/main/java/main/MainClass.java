@@ -16,7 +16,6 @@ public class MainClass {
         String content = "QRCode example with logo";
         byte[] qrArray = QRCodeGenerator.generateQRCodeWithLogo(content, new Size(450, 450));
         //byte[] qrArray = QRCodeGenerator.generateQRCode(content, new Size(450, 450));
-
         Path path = Paths.get("/Users/togrulr/Desktop/ExampleFiles/qr-image.png");
         Files.write(path, qrArray);
     }
